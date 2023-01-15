@@ -1,0 +1,165 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                   Nav css Start
+=========================================================*/
+nav,
+.navbar {
+    padding: 20px 0;
+
+    .navbar-brand{
+        .logo{
+            max-width: 200px;
+        }
+    }
+
+    .navbar-nav{
+        margin-left: 10px;
+        .nav-item{
+            margin-right: 10px;
+            position: relative;
+            &:hover{
+                .floating_menu{
+                    visibility: visible;
+                    opacity: 1;
+                    top: 150%;
+                }
+            }
+            .nav-link{
+                &:hover{
+                    color: $c1;
+                }
+                @include fs($blk,15px,600,inherit);
+                opacity: .7;
+                transition: all linear .3s;
+                i{
+                    font-size: 10px;
+                    margin-left: 5px;
+                }
+            }
+            .tag{
+                position: absolute;
+                top: -5px;
+                right: 20px;
+                padding: 1px 5px;
+                text-align: center;
+                @include fs($wh,8px,700,inherit);
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                opacity: .7;
+            }
+            .floating_menu{
+                visibility: hidden;
+                opacity: 0;
+                position: absolute;
+                top: 300%;
+                left: -100%;
+                width: 900px;
+                padding: 40px 20px 20px 20px;
+                background: #fff;
+                box-shadow: 0 0 5px 3px #f1f1f1;
+                z-index: 999999999;
+                transition: all linear .3s;
+                .floating_menu_col{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    ul{
+                        width: 19%;
+                        li{
+                            &:first-child{
+                                @include fs($blk,14px,700,$f1);
+                                text-transform: uppercase;
+                                padding-bottom: 10px;
+                                margin-bottom: 10px;
+                                position: relative;
+                                &:after{
+                                    position: absolute;
+                                    content: '';
+                                    bottom: 0;
+                                    left: 0;
+                                    width: 80%;
+                                    height: 2px;
+                                    background: $c1;
+                                }
+                            }
+                            a{
+                                @include fs($blk,14px,400,$f1);
+                                text-transform: capitalize;
+                                margin: 5px 0;
+                                opacity: .7;
+                                transition: all linear .3s;
+                                &:hover{
+                                    color: $c1;
+                                }
+                            }
+                        }
+                    }
+                }
+                .floating_menu_img{
+                    margin-top: 20px;
+                    a{
+                        img{
+                            width: 100%;
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .search_bar{
+        form{
+            width: 100%;
+            border: 1px solid #f1f1f1;
+            position: relative;
+
+            select{
+                width: 25%;
+                height: 40px;
+                border: none;
+                background: transparent;
+                text-transform: uppercase;
+                padding-left: 20px;
+                padding-right: 20px;
+                @include fs($blk,12px,400,$f1);
+                option{
+                    @include fs($blk,12px,400,$f1);
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+            input{
+                height: 40px;
+                border: none;
+                @include fs($blk,14px,400,$f1);
+                opacity: .7;
+                padding-right: 20px;
+                padding-left: 20px;
+                border-left: 1px solid #f1f1f1;
+            }
+            a{
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                width: 42px;
+                height: 42px;
+                line-height: 45px;
+                text-align: center;
+                background: $blk;
+
+                i{
+                    color: $wh;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+/*=========================================================
+                   Nav css end
+=========================================================*/

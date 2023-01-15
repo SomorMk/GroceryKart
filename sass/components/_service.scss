@@ -1,0 +1,56 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                   Service css Start
+=========================================================*/
+#service{
+    .service_inner{
+        padding: 50px 0;
+        border-top: 1.5px solid #eee;
+        border-bottom: 1.5px solid #eee;
+        text-align: center;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+            li{
+                width: 25%;
+                position: relative;
+                img{
+                    max-width: 200px;
+                }
+                h6{
+                    @include fs($blk,16px,600,$f1);
+                    margin-top: 20px;
+                    margin-bottom: 5px;
+                    text-transform: capitalize;
+                }
+                p{
+                    @include fs($blk,14px,400,$f1);
+                    opacity: .8;
+                    text-transform: capitalize;
+                }
+                &::after{
+                    position: absolute;
+                    content: '';
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    width: 1.2px;
+                    height: 80%;
+                    background: #eee;
+                }
+                &:last-child{
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+/*=========================================================
+                   Service css end
+=========================================================*/
