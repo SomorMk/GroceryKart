@@ -1,0 +1,81 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                   Banner css Start
+=========================================================*/
+#banner{
+    &:hover{
+        .prev_aro,
+        .nxt_aro{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    .prev_aro{
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: $wh;
+        background: $c1;
+        z-index: 9;
+        opacity: 0;
+        visibility: hidden;
+        transition: all linear .2s;
+        &:hover{
+            background: $blk;
+            border-radius: 50%;
+        }
+    }
+    .nxt_aro{
+        position: absolute;
+        top: 50%;
+        right: 50px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: $wh;
+        background: $c1;
+        z-index: 9;
+        opacity: 0;
+        visibility: hidden;
+        transition: all linear .2s;
+        &:hover{
+            background: $blk;
+            border-radius: 50%;
+        }
+    }
+    .banner_slider_item{
+        padding: 150px 0;
+        position: relative;
+        .banner_text{
+            text-align: center;
+            h4{
+                @include fs($blk,20px,400,inherit);
+                letter-spacing: 0.05em;
+                text-transform: capitalize;
+                margin-bottom: 20px;
+            }
+            h1{
+                @include fs($blk,80px,400,$f2);
+                margin-bottom: 20px;
+                opacity: .8;
+                text-transform: capitalize;
+            }
+            p{
+                @include fs($c2,18px,400,inherit);
+                font-style: italic;
+                text-transform: capitalize;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+/*=========================================================
+                   Banner css end
+=========================================================*/

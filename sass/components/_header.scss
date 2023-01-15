@@ -1,0 +1,174 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                   Header css Start
+=========================================================*/
+#header {
+    padding: 8px 0;
+    background: $c1;
+
+    .header_left {
+        display: flex;
+        flex-wrap: wrap;
+
+        .header_logos {
+            display: flex;
+            flex-wrap: wrap;
+            border-right: 1px solid $wh;
+            margin-right: 20px;
+
+            li {
+                margin-right: 20px;
+
+                a {
+                    i {
+                        color: $wh;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .download_logos {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                margin-right: 15px;
+
+                a {
+                    i {
+                        color: $wh;
+                        font-size: 14px;
+                    }
+                }
+
+                p {
+                    @include fs($wh, 14px, 500, $f1);
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+
+    .header_right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        .phone_number {
+            display: flex;
+            flex-wrap: wrap;
+            border-right: 1px solid $wh;
+            padding-right: 20px;
+
+            li {
+                margin-right: 10px;
+
+                a {
+                    i {
+                        color: $wh;
+                        font-size: 14px;
+                    }
+                }
+
+                a {
+                    @include fs($wh, 14px, 500, $f1);
+                    line-height: 25px;
+                }
+            }
+        }
+
+        .email {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                margin-left: 20px;
+
+                a {
+                    i {
+                        color: $wh;
+                        font-size: 14px;
+                    }
+                }
+
+                a {
+                    @include fs($wh, 14px, 500, $f1);
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+#header_2 {
+
+    .container {
+        padding: 12px 0;
+        border-bottom: 1px solid #f1f1f1;
+
+        .header_left {
+            p {
+                @include fs($blk, 14px, 400, $f1);
+                opacity: .7;
+            }
+        }
+
+        .header_right {
+            .header_logos {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+
+                li {
+                    margin-left: 25px;
+                    position: relative;
+                    &:hover{
+                        ul{
+                            opacity: 1;
+                            visibility: visible;
+                            top: 150%;
+                        }
+                    }
+
+                    a {
+                        i {
+                            color: $blk;
+                            font-size: 20px;
+                            opacity: .7;
+                        }
+                    }
+
+                    ul{
+                        position: absolute;
+                        top: 300%;
+                        right: 0;
+                        width: 200px;
+                        padding: 10px 30px;
+                        text-align: left;
+                        background: $wh;
+                        z-index: 99;
+                        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all linear .4s;
+
+                        li{
+                            margin: 5px 0;
+                            a,p{
+                                @include fs($blk,14px,400,$f1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*=========================================================
+                   Header css end
+=========================================================*/

@@ -1,0 +1,176 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                Trending Product css Start
+=========================================================*/
+#trending_product{
+    padding: 50px 0;
+
+    .trending_inner{
+        margin-top: 40px;
+        .nav-tabs{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 500px;
+            margin: 0 auto;
+            border: none;
+
+            .nav-item{
+                .nav-link{
+                    border: none;
+                    display: inline-block;
+                    position: relative;
+                    padding-top: 50px;
+                    text-transform: capitalize;
+                    @include fs($blk,18px,400,inherit);
+                    img{
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        max-width: 50px;
+                    }
+                }
+                .active{
+                    color: $c1;
+                }
+            }
+        }
+        #trendingTabContent{
+            margin-top: 50px;
+            .trending_item_inner{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                li{
+                    width: 18%;
+                    .trending_item{
+                        margin-bottom: 40px;
+                        &:hover{
+                            .item_img{
+                                img{
+                                    transform: scale(1.05);
+                                }
+                                .overlay{
+                                    visibility: visible;
+                                    opacity: 1;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        .item_img{
+                            position: relative;
+                            overflow: hidden;
+                            .tag{
+                                position: absolute;
+                                top: 10%;
+                                right: 10%;
+                                padding: 1px 3px;
+                                background: red;
+                                @include fs($wh,12px,400,$f1);
+                                text-transform: uppercase;
+                                z-index: 9;
+                                opacity: .7;
+                            }
+                            img{
+                                width: 100%;
+                                max-width: 100%;
+                                transition: all linear .3s;
+                            }
+                            .overlay{
+                                visibility: hidden;
+                                opacity: 0;
+                                position: absolute;
+                                left: 50%;
+                                bottom: 0;
+                                width: 0;
+                                transform: translateX(-50%);
+                                transition: all linear .3s;
+                                ul{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: space-evenly;
+                                    width: 100%;
+                                    padding: 10px 20px;
+                                    background: $c1;
+                                    opacity: .9;
+                                    li{
+                                        i{
+                                            color: $wh;
+                                            font-size: 15px;
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .item_text{
+                            margin-top: 20px;
+                            text-align: center;
+                            .product_name{
+                                @include fs($blk,15px,600,inherit);
+                                text-transform: capitalize;
+                            }
+                            .product_price{
+                                @include fs($c1,13px,700,inherit);
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .trending_banner{
+        margin-top: 50px;
+        .trending_banner_img{
+            position: relative;
+            overflow: hidden;
+            &:hover{
+                img{
+                    transform: scale(1.06);
+                }
+            }
+            img{
+                width: 100%;
+                max-width: 100%;
+                transition: all linear .3s;
+            }
+            .trending_banner_text{
+                position: absolute;
+                top: 50%;
+                right: 30px;
+                transform: translateY(-50%);
+                text-align: right;
+                p{
+                    @include fs($c1,16px,400,$f1);
+                    margin-bottom: 15px;
+                    text-transform: capitalize;
+                }
+                h3{
+                    @include fs($blk,52px,400,$f2);
+                    margin-bottom: 20px;
+                    text-transform: capitalize;
+                }
+                a{
+                    @include fs($blk,13px,400,$f1);
+                    padding: 10px 25px;
+                    text-align: center;
+                    background: $c1;
+                    text-transform: capitalize;
+                    transition: all linear .3s;
+                    &:hover{
+                        color: $wh;
+                        background: $blk;
+                    }
+                }
+            }
+        }
+    }
+}
+/*=========================================================
+                Trending Product css end
+=========================================================*/

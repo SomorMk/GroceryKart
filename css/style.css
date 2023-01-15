@@ -1,0 +1,874 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+.com_btn {
+  padding: 12px 35px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: inherit;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  transition: all linear 0.3s;
+}
+.com_btn:hover {
+  color: #000;
+  background: transparent;
+}
+
+.com_heading p {
+  color: #888888;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Great Vibes", cursive;
+}
+.com_heading h3 {
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: inherit;
+  letter-spacing: 1px;
+}
+
+/*=========================================================
+                    Common css end
+=========================================================*/
+/*=========================================================
+                   Header css Start
+=========================================================*/
+#header {
+  padding: 8px 0;
+  background: #ffb12b;
+}
+#header .header_left {
+  display: flex;
+  flex-wrap: wrap;
+}
+#header .header_left .header_logos {
+  display: flex;
+  flex-wrap: wrap;
+  border-right: 1px solid #fff;
+  margin-right: 20px;
+}
+#header .header_left .header_logos li {
+  margin-right: 20px;
+}
+#header .header_left .header_logos li a i {
+  color: #fff;
+  font-size: 14px;
+}
+#header .header_left .download_logos {
+  display: flex;
+  flex-wrap: wrap;
+}
+#header .header_left .download_logos li {
+  margin-right: 15px;
+}
+#header .header_left .download_logos li a i {
+  color: #fff;
+  font-size: 14px;
+}
+#header .header_left .download_logos li p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  line-height: 25px;
+}
+#header .header_right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+#header .header_right .phone_number {
+  display: flex;
+  flex-wrap: wrap;
+  border-right: 1px solid #fff;
+  padding-right: 20px;
+}
+#header .header_right .phone_number li {
+  margin-right: 10px;
+}
+#header .header_right .phone_number li a i {
+  color: #fff;
+  font-size: 14px;
+}
+#header .header_right .phone_number li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  line-height: 25px;
+}
+#header .header_right .email {
+  display: flex;
+  flex-wrap: wrap;
+}
+#header .header_right .email li {
+  margin-left: 20px;
+}
+#header .header_right .email li a i {
+  color: #fff;
+  font-size: 14px;
+}
+#header .header_right .email li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  line-height: 25px;
+}
+
+#header_2 .container {
+  padding: 12px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+#header_2 .container .header_left p {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.7;
+}
+#header_2 .container .header_right .header_logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+#header_2 .container .header_right .header_logos li {
+  margin-left: 25px;
+  position: relative;
+}
+#header_2 .container .header_right .header_logos li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  top: 150%;
+}
+#header_2 .container .header_right .header_logos li a i {
+  color: #000;
+  font-size: 20px;
+  opacity: 0.7;
+}
+#header_2 .container .header_right .header_logos li ul {
+  position: absolute;
+  top: 300%;
+  right: 0;
+  width: 200px;
+  padding: 10px 30px;
+  text-align: left;
+  background: #fff;
+  z-index: 99;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+  opacity: 0;
+  transition: all linear 0.4s;
+}
+#header_2 .container .header_right .header_logos li ul li {
+  margin: 5px 0;
+}
+#header_2 .container .header_right .header_logos li ul li a, #header_2 .container .header_right .header_logos li ul li p {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*=========================================================
+                   Header css end
+=========================================================*/
+/*=========================================================
+                   Nav css Start
+=========================================================*/
+nav,
+.navbar {
+  padding: 20px 0;
+}
+nav .navbar-brand .logo,
+.navbar .navbar-brand .logo {
+  max-width: 200px;
+}
+nav .navbar-nav,
+.navbar .navbar-nav {
+  margin-left: 10px;
+}
+nav .navbar-nav .nav-item,
+.navbar .navbar-nav .nav-item {
+  margin-right: 10px;
+  position: relative;
+}
+nav .navbar-nav .nav-item:hover .floating_menu,
+.navbar .navbar-nav .nav-item:hover .floating_menu {
+  visibility: visible;
+  opacity: 1;
+  top: 150%;
+}
+nav .navbar-nav .nav-item .nav-link,
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+  opacity: 0.7;
+  transition: all linear 0.3s;
+}
+nav .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #ffb12b;
+}
+nav .navbar-nav .nav-item .nav-link i,
+.navbar .navbar-nav .nav-item .nav-link i {
+  font-size: 10px;
+  margin-left: 5px;
+}
+nav .navbar-nav .nav-item .tag,
+.navbar .navbar-nav .nav-item .tag {
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  padding: 1px 5px;
+  text-align: center;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 700;
+  font-family: inherit;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+nav .navbar-nav .nav-item .floating_menu,
+.navbar .navbar-nav .nav-item .floating_menu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 300%;
+  left: -100%;
+  width: 900px;
+  padding: 40px 20px 20px 20px;
+  background: #fff;
+  box-shadow: 0 0 5px 3px #f1f1f1;
+  z-index: 999999999;
+  transition: all linear 0.3s;
+}
+nav .navbar-nav .nav-item .floating_menu .floating_menu_col,
+.navbar .navbar-nav .nav-item .floating_menu .floating_menu_col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+nav .navbar-nav .nav-item .floating_menu .floating_menu_col ul,
+.navbar .navbar-nav .nav-item .floating_menu .floating_menu_col ul {
+  width: 19%;
+}
+nav .navbar-nav .nav-item .floating_menu .floating_menu_col ul li:first-child,
+.navbar .navbar-nav .nav-item .floating_menu .floating_menu_col ul li:first-child {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+nav .navbar-nav .nav-item .floating_menu .floating_menu_col ul li:first-child:after,
+.navbar .navbar-nav .nav-item .floating_menu .floating_menu_col ul li:first-child:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  height: 2px;
+  background: #ffb12b;
+}
+nav .navbar-nav .nav-item .floating_menu .floating_menu_col ul li a,
+.navbar .navbar-nav .nav-item .floating_menu .floating_menu_col ul li a {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
+  margin: 5px 0;
+  opacity: 0.7;
+  transition: all linear 0.3s;
+}
+nav .navbar-nav .nav-item .floating_menu .floating_menu_col ul li a:hover,
+.navbar .navbar-nav .nav-item .floating_menu .floating_menu_col ul li a:hover {
+  color: #ffb12b;
+}
+nav .navbar-nav .nav-item .floating_menu .floating_menu_img,
+.navbar .navbar-nav .nav-item .floating_menu .floating_menu_img {
+  margin-top: 20px;
+}
+nav .navbar-nav .nav-item .floating_menu .floating_menu_img a img,
+.navbar .navbar-nav .nav-item .floating_menu .floating_menu_img a img {
+  width: 100%;
+  max-width: 100%;
+}
+nav .search_bar form,
+.navbar .search_bar form {
+  width: 100%;
+  border: 1px solid #f1f1f1;
+  position: relative;
+}
+nav .search_bar form select,
+.navbar .search_bar form select {
+  width: 25%;
+  height: 40px;
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+nav .search_bar form select option,
+.navbar .search_bar form select option {
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+nav .search_bar form input,
+.navbar .search_bar form input {
+  height: 40px;
+  border: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.7;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-left: 1px solid #f1f1f1;
+}
+nav .search_bar form a,
+.navbar .search_bar form a {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  line-height: 45px;
+  text-align: center;
+  background: #000;
+}
+nav .search_bar form a i,
+.navbar .search_bar form a i {
+  color: #fff;
+  font-size: 15px;
+}
+
+/*=========================================================
+                   Nav css end
+=========================================================*/
+/*=========================================================
+                   Banner css Start
+=========================================================*/
+#banner:hover .prev_aro,
+#banner:hover .nxt_aro {
+  opacity: 1;
+  visibility: visible;
+}
+#banner .prev_aro {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  background: #ffb12b;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear 0.2s;
+}
+#banner .prev_aro:hover {
+  background: #000;
+  border-radius: 50%;
+}
+#banner .nxt_aro {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  background: #ffb12b;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear 0.2s;
+}
+#banner .nxt_aro:hover {
+  background: #000;
+  border-radius: 50%;
+}
+#banner .banner_slider_item {
+  padding: 150px 0;
+  position: relative;
+}
+#banner .banner_slider_item .banner_text {
+  text-align: center;
+}
+#banner .banner_slider_item .banner_text h4 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: inherit;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+#banner .banner_slider_item .banner_text h1 {
+  color: #000;
+  font-size: 80px;
+  font-weight: 400;
+  font-family: "Great Vibes", cursive;
+  margin-bottom: 20px;
+  opacity: 0.8;
+  text-transform: capitalize;
+}
+#banner .banner_slider_item .banner_text p {
+  color: #888888;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: inherit;
+  font-style: italic;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+/*=========================================================
+                   Banner css end
+=========================================================*/
+/*=========================================================
+                Trending Product css Start
+=========================================================*/
+#trending_product {
+  padding: 50px 0;
+}
+#trending_product .trending_inner {
+  margin-top: 40px;
+}
+#trending_product .trending_inner .nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: 0 auto;
+  border: none;
+}
+#trending_product .trending_inner .nav-tabs .nav-item .nav-link {
+  border: none;
+  display: inline-block;
+  position: relative;
+  padding-top: 50px;
+  text-transform: capitalize;
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: inherit;
+}
+#trending_product .trending_inner .nav-tabs .nav-item .nav-link img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 50px;
+}
+#trending_product .trending_inner .nav-tabs .nav-item .active {
+  color: #ffb12b;
+}
+#trending_product .trending_inner #trendingTabContent {
+  margin-top: 50px;
+}
+#trending_product .trending_inner #trendingTabContent .trending_item_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#trending_product .trending_inner #trendingTabContent .trending_item_inner li {
+  width: 18%;
+}
+#trending_product .trending_inner #trendingTabContent .trending_item_inner li .trending_item {
+  margin-bottom: 40px;
+}
+#trending_product .trending_inner #trendingTabContent .trending_item_inner li .trending_item:hover .item_img img {
+  transform: scale(1.05);
+}
+#trending_product .trending_inner #trendingTabContent .trending_item_inner li .trending_item:hover .item_img .overlay {
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+}
+#trending_product .trending_inner #trendingTabContent .trending_item_inner li .trending_item .item_img {
+  position: relative;
+  overflow: hidden;
+}
+#trending_product .trending_inner #trendingTabContent .trending_item_inner li .trending_item .item_img .tag {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  padding: 1px 3px;
+  background: red;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  z-index: 9;
+  opacity: 0.7;
+}
+#trending_product .trending_inner #trendingTabContent .trending_item_inner li .trending_item .item_img img {
+  width: 100%;
+  max-width: 100%;
+  transition: all linear 0.3s;
+}
+#trending_product .trending_inner #trendingTabContent .trending_item_inner li .trending_item .item_img .overlay {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  transform: translateX(-50%);
+  transition: all linear 0.3s;
+}
+#trending_product .trending_inner #trendingTabContent .trending_item_inner li .trending_item .item_img .overlay ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 10px 20px;
+  background: #ffb12b;
+  opacity: 0.9;
+}
+#trending_product .trending_inner #trendingTabContent .trending_item_inner li .trending_item .item_img .overlay ul li i {
+  color: #fff;
+  font-size: 15px;
+  opacity: 1;
+}
+#trending_product .trending_inner #trendingTabContent .trending_item_inner li .trending_item .item_text {
+  margin-top: 20px;
+  text-align: center;
+}
+#trending_product .trending_inner #trendingTabContent .trending_item_inner li .trending_item .item_text .product_name {
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+  text-transform: capitalize;
+}
+#trending_product .trending_inner #trendingTabContent .trending_item_inner li .trending_item .item_text .product_price {
+  color: #ffb12b;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: inherit;
+  margin-top: 5px;
+}
+#trending_product .trending_banner {
+  margin-top: 50px;
+}
+#trending_product .trending_banner .trending_banner_img {
+  position: relative;
+  overflow: hidden;
+}
+#trending_product .trending_banner .trending_banner_img:hover img {
+  transform: scale(1.06);
+}
+#trending_product .trending_banner .trending_banner_img img {
+  width: 100%;
+  max-width: 100%;
+  transition: all linear 0.3s;
+}
+#trending_product .trending_banner .trending_banner_img .trending_banner_text {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  text-align: right;
+}
+#trending_product .trending_banner .trending_banner_img .trending_banner_text p {
+  color: #ffb12b;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+#trending_product .trending_banner .trending_banner_img .trending_banner_text h3 {
+  color: #000;
+  font-size: 52px;
+  font-weight: 400;
+  font-family: "Great Vibes", cursive;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+#trending_product .trending_banner .trending_banner_img .trending_banner_text a {
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px 25px;
+  text-align: center;
+  background: #ffb12b;
+  text-transform: capitalize;
+  transition: all linear 0.3s;
+}
+#trending_product .trending_banner .trending_banner_img .trending_banner_text a:hover {
+  color: #fff;
+  background: #000;
+}
+
+/*=========================================================
+                Trending Product css end
+=========================================================*/
+/*=========================================================
+                   Service css Start
+=========================================================*/
+#service .service_inner {
+  padding: 50px 0;
+  border-top: 1.5px solid #eee;
+  border-bottom: 1.5px solid #eee;
+  text-align: center;
+}
+#service .service_inner ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#service .service_inner ul li {
+  width: 25%;
+  position: relative;
+}
+#service .service_inner ul li img {
+  max-width: 200px;
+}
+#service .service_inner ul li h6 {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+#service .service_inner ul li p {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.8;
+  text-transform: capitalize;
+}
+#service .service_inner ul li::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1.2px;
+  height: 80%;
+  background: #eee;
+}
+#service .service_inner ul li:last-child::after {
+  display: none;
+}
+
+/*=========================================================
+                   Service css end
+=========================================================*/
+/*=========================================================
+                   Footer css Start
+=========================================================*/
+#footer {
+  padding: 100px 0 0;
+  margin-top: 100px;
+  position: relative;
+  z-index: 1;
+}
+#footer::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: url(../../images/top1.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#footer::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.09);
+  z-index: -1;
+}
+#footer .footer_top {
+  text-align: center;
+  padding-bottom: 50px;
+}
+#footer .footer_top img {
+  max-width: 200px;
+}
+#footer .footer_top .text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#footer .footer_top .text p {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 28px;
+  opacity: 0.7;
+}
+#footer .footer_top .btn img {
+  max-width: 200px;
+}
+#footer .footer_bottom {
+  border-top: 1px solid #888888;
+  padding: 30px 0;
+}
+#footer .footer_bottom .footer_sec_head {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+}
+#footer .footer_bottom .pages ul li {
+  margin: 5px 0;
+}
+#footer .footer_bottom .pages ul li a {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.7;
+  transition: all linear 0.3s;
+}
+#footer .footer_bottom .pages ul li a:hover {
+  color: #ffb12b;
+}
+#footer .footer_bottom .footer_right p {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.7;
+}
+#footer .footer_bottom .footer_right .input {
+  position: relative;
+  margin-top: 20px;
+}
+#footer .footer_bottom .footer_right .input input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: #fff;
+  padding-left: 20px;
+  font-size: 14px;
+  padding-right: 40px;
+}
+#footer .footer_bottom .footer_right .input a {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #ffb12b;
+}
+#footer .footer_bottom .footer_right ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-top: 20px;
+}
+#footer .footer_bottom .footer_right ul li {
+  margin-right: 25px;
+}
+#footer .footer_bottom .footer_right ul li a i {
+  color: #000;
+  font-size: 14px;
+}
+#footer .copyright_info {
+  padding: 10px 0;
+  background: #000;
+  margin-top: 20px;
+}
+#footer .copyright_info h6 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  line-height: 30px;
+}
+#footer .copyright_info ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+#footer .copyright_info ul li {
+  margin-left: 20px;
+}
+#footer .copyright_info ul li a img {
+  max-width: 30px;
+  border-radius: 50%;
+}
+
+/*=========================================================
+                   Footer css end
+=========================================================*//*# sourceMappingURL=style.css.map */

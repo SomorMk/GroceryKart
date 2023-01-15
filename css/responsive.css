@@ -1,0 +1,278 @@
+@media (min-width: 1400px) {}
+
+@media (min-width: 1311px) and (max-width: 1399.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1310.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+    #header {
+        display: none;
+    }
+    #header_2 .container .header_left {
+        display: none;
+    }
+    #header_2 .container {
+        padding: 0;
+        border-bottom: none;
+    }
+    #header_2 .container .header_right .header_logos {
+        position: fixed;
+        bottom: 0;
+        z-index: 9999;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+        justify-content: space-evenly;
+        background: #fff;
+        border-top: 1px solid #eee;
+    }
+    #header_2 .container .header_right .header_logos li {
+        margin-left: 0;
+    }
+    #header_2 .container .header_right .header_logos li a i {
+        opacity: 1;
+    }
+
+    nav .navbar-brand .logo, .navbar .navbar-brand .logo {
+        max-width: 150px;
+        margin-left: 15px;
+    }
+    .navbar-toggler {
+        margin-right: 15px;
+    }
+    nav .search_bar form, .navbar .search_bar form {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    nav .search_bar form select, .navbar .search_bar form select {
+        width: 20%;
+        padding-left: 10px;
+        padding-right: 25px;
+    }
+    nav .search_bar form input, .navbar .search_bar form input {
+        width: 78%;
+    }
+    nav .navbar-nav, .navbar .navbar-nav {
+        margin-top: 20px;
+    }
+    nav .navbar-nav .nav-item .tag, .navbar .navbar-nav .nav-item .tag {
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+    nav .navbar-nav .nav-item .floating_menu, .navbar .navbar-nav .nav-item .floating_menu {
+        left: 0;
+        width: 100%;
+    }
+    nav .navbar-nav .nav-item:hover .floating_menu, .navbar .navbar-nav .nav-item:hover .floating_menu {
+        padding: 20px 20px 20px 20px;
+        top: 125%;
+    }
+    nav .navbar-nav .nav-item .floating_menu .floating_menu_col ul, .navbar .navbar-nav .nav-item .floating_menu .floating_menu_col ul {
+        width: 48%;
+        margin-bottom: 15px;
+    }
+    nav .navbar-nav .nav-item .floating_menu .floating_menu_col ul li:first-child, .navbar .navbar-nav .nav-item .floating_menu .floating_menu_col ul li:first-child {
+        font-size: 11px;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+    nav .navbar-nav .nav-item .floating_menu .floating_menu_col ul li a, .navbar .navbar-nav .nav-item .floating_menu .floating_menu_col ul li a {
+        font-size: 12px;
+        margin: 0px 0;
+    }
+
+    #banner .prev_aro {
+        left: 20px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    #banner .nxt_aro {
+        right: 20px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    #banner .banner_slider_item {
+        padding: 50px 0;
+    }
+    #banner .banner_slider_item .banner_text h4 {
+        font-size: 15px;
+    }
+    #banner .banner_slider_item .banner_text h1 {
+        font-size: 50px;
+    }
+    #banner .banner_slider_item .banner_text p {
+        font-size: 14px;
+    }
+    .com_btn {
+        padding: 8px 20px;
+        font-size: 10px;
+    }
+
+    #trending_product {
+        padding: 50px 0 0px;
+    }
+    #trending_product .trending_inner .nav-tabs .nav-item {
+        width: 33%;
+    }
+    #trending_product .trending_inner .nav-tabs {
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    #trending_product .trending_inner .nav-tabs .nav-item .nav-link {
+        padding-top: 40px;
+        font-size: 13px;
+    }
+    #trending_product .trending_inner #trendingTabContent .trending_item_inner li {
+        width: 48%;
+    }
+    #trending_product .trending_inner #trendingTabContent .trending_item_inner li .trending_item .item_img .overlay {
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+    }
+    #trending_product .trending_inner #trendingTabContent .trending_item_inner li .trending_item .item_img .overlay ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 5px 0;
+    }
+    #trending_product .trending_inner #trendingTabContent .trending_item_inner li .trending_item .item_img .overlay ul li {
+        width: 30%;
+        text-align: center;
+    }
+    #trending_product .trending_inner #trendingTabContent .trending_item_inner li .trending_item .item_img .overlay ul li i {
+        font-size: 14px;
+    }
+    #trending_product .trending_inner #trendingTabContent {
+        margin-top: 20px;
+    }
+    #trending_product .trending_inner {
+        margin-top: 20px;
+    }
+    #trending_product .trending_inner #trendingTabContent .trending_item_inner li .trending_item .item_text {
+        margin-top: 10px;
+    }
+    #trending_product .trending_inner #trendingTabContent .trending_item_inner li .trending_item .item_text .product_name {
+        font-size: 13px;
+    }
+    #trending_product .trending_inner #trendingTabContent .trending_item_inner li .trending_item .item_text .product_price {
+        font-size: 11px;
+        margin-top: 2px;
+    }
+    #trending_product .trending_inner #trendingTabContent .trending_item_inner li .trending_item .item_img .tag {
+        font-size: 8px;
+    }
+    #trending_product .trending_banner {
+        margin-top: 20px;
+    }
+    #trending_product .trending_banner .trending_banner_img {
+        margin-bottom: 20px;
+    }
+    #trending_product .trending_banner .trending_banner_img .trending_banner_text h3 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    #trending_product .trending_banner .trending_banner_img .trending_banner_text p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    #trending_product .trending_banner .trending_banner_img .trending_banner_text a {
+        font-size: 10px;
+        padding: 8px 20px;
+    }
+
+    #service .service_inner {
+        padding: 30px 0 10px;
+        border: none;
+    }
+    #service .service_inner ul li {
+        width: 100%;
+        padding: 0 5px;
+        padding-bottom: 20px;
+    }
+    #service .service_inner ul li::after {
+        position: absolute;
+        content: "";
+        top: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        height: 1px;
+        background: #eee;
+    }
+    #service .service_inner ul li h6 {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    #service .service_inner ul li p {
+        font-size: 12px;
+    }
+
+    #footer {
+        margin-top: 0px;
+    }
+    #footer .footer_top .text p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+    #footer .footer_top .btn img {
+        max-width: 100px;
+    }
+    #footer .footer_top {
+        padding-bottom: 20px;
+    }
+    #footer .footer_bottom .footer_sec_head {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    #footer .footer_bottom .pages {
+        margin-bottom: 20px;
+    }
+    #footer .footer_bottom .store {
+        text-align: center;
+    }
+    #footer .footer_bottom .pages ul li a {
+        font-size: 13px;
+    }
+    #footer .footer_bottom .footer_right {
+        text-align: center;
+    }
+    #footer .footer_bottom .footer_right ul {
+        justify-content: space-around;
+    }
+    #footer .footer_bottom .footer_right ul li {
+        margin-right: 0;
+    }
+    #footer .copyright_info {
+        margin-bottom: 55px;
+        text-align: center;
+    }
+    #footer .copyright_info h6 {
+        font-size: 10px;
+        line-height: 30px;
+        margin-top: 5px;
+    }
+    #footer .copyright_info ul {
+        justify-content: space-evenly;
+    }
+    #footer .copyright_info ul li {
+        margin-left: 0;
+    }
+    #footer .copyright_info ul li a img {
+        max-width: 20px;
+    }
+    #footer .footer_bottom {
+        padding: 30px 0 0;
+    }
+}
